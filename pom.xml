@@ -33,7 +33,7 @@
         <wro4j.version>1.8.0</wro4j.version> <!-- wro4j 1.0.0 requires Java 9 -->
 
         <!-- Java EE / Java SE dependencies -->
-        <tomcat.version>9.0.46</tomcat.version>
+        <tomcat.version>10.1.9</tomcat.version>
         <jaxb-api.version>2.3.1</jaxb-api.version>
         <jaxb-runtime.version>2.3.4</jaxb-runtime.version>
         <javax-activation.version>1.2.0</javax-activation.version>
@@ -81,7 +81,7 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
      
    
-    <jacoco.version>0.8.6</jacoco.version>
+    <jacoco.version>0.2.1</jacoco.version>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
     <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
@@ -93,12 +93,12 @@
   <repository>
     <id>maven-releases</id>
     <!-- CHANGE HERE by your team nexus server -->
-    <url>http://172.171.224.34:8081/repository/maven-releases//</url>
+    <url>http://40.114.45.15:8081/repository/maven-releases/</url>
   </repository>
   <snapshotRepository>
     <id>maven-snapshots</id>
     <!-- CHANGE HERE by your team nexus server -->
-    <url>http://65.0.180.184:8081/repository/maven-snapshots/</url>
+    <url>http://40.114.45.15:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
 
@@ -313,7 +313,7 @@
         <dependency>
     <groupId>org.jacoco</groupId> 
     <artifactId>jacoco-maven-plugin</artifactId>
-    <version>0.8.6</version>
+    <version>8.2.1</version>
 </dependency>
 
     </dependencies>
@@ -603,7 +603,7 @@
     <repository>
         <id>maven-releases</id>
         <name>maven-releases</name>
-        <url>http://172.171.224.34:8081/repository/maven-releases/</url>
+        <url>http://40.114.45.15:8081/repository/maven-releases/</url>
     </repository>
  
     </repositories>
